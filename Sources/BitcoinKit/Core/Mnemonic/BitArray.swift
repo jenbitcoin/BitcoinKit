@@ -112,6 +112,8 @@ public struct BitArray: Hashable, RangeReplaceableCollection {
             cardinality = count
         }
     }
+    
+    public func replaceSubrange<C>(_ subrange: Range<Int>, with newElements: C) where C : Collection, Bool == C.Element {}
 
     // MARK: Querying a BitArray
 
